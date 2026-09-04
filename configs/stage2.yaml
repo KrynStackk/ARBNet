@@ -1,0 +1,14 @@
+stage2:
+  checkpoint: checkpoints/stage2/proposed_sparse_beam_refiner/final/best.pth
+  save_dir: checkpoints/stage2/proposed_sparse_beam_refiner
+  run_id: final
+  stage3_data_dir: intermediate/stage3
+  top_m: 13
+  quant_bits: 8
+  batch_size: 16
+  eval_batch_size: 16
+  epochs: 200
+  learning_rate: 0.0007
+  eta_min: 0.000014
+  weight_decay: 0.00001
+  max_grad_norm: 1.0

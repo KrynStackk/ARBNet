@@ -1,0 +1,23 @@
+stage3:
+  checkpoint: checkpoints/stage3/proposed_graph_rzf/final/best.pth
+  save_dir: checkpoints/stage3/proposed_graph_rzf
+  run_id: final
+  hidden_dim: 64
+  num_layers: 3
+  mask_init: 0.90
+  alpha: 0.03
+  p_min: 0.02
+  p_max: 1.0
+  radar_noise_var: 1.0
+  target_rcs_var: 1.0
+  sensing_floor_db: 12.0
+  sensing_floor_weight: 20.0
+  gamma_db: 10.0
+  communication_weight: 2.0
+  batch_size: 16
+  eval_batch_size: 16
+  epochs: 200
+  learning_rate: 0.0003
+  eta_min: 0.000006
+  weight_decay: 0.0001
+  max_grad_norm: 1.0

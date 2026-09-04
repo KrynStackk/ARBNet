@@ -1,0 +1,11 @@
+torch
+setuptools
+wheel
+packaging
+ninja
+numpy
+scipy
+einops
+timm
+PyYAML
+-e ./selective_scan
